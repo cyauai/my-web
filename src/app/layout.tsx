@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import NavBar from "@/components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-gray-600">
-      <body className={inter.className}>
+      <head>
+        <script src="https://unpkg.com/split-type"></script>
+      </head>
+      <body className={outfit.className}>
         <div className="bg-gray-600">
           <NavBar />
           <main className="ml-16">{children}</main>

@@ -7,27 +7,25 @@ type IconProps = {
   color: string;
   name: string;
   href: string;
-  id: string;
 };
 
-export default function NavIcon({ icon, color, name, href, id }: IconProps) {
-  const activeColors = {
-    indigo: "bg-indigo-500",
-    rose: "bg-rose-500",
-    orange: "bg-orange-500",
-    blue: "bg-blue-500",
+export default function NavIcon({ icon, color, name, href }: IconProps) {
+  const colors = {
+    rose: "#f43f5e",
+    indigo: "#6366f1",
+    blue: "#3b82f6",
+    orange: "#f97316",
   };
-  const activeColor = activeColors[color as keyof typeof activeColors];
-  const hoverColor = `hover:${activeColor}`;
+
   const [showPopUp, setShowPopUp] = useState(false);
   const [active, setActive] = useState(false);
-  console.log(active);
+
   return (
     <Link
       onSetInactive={(_to: string, _element: HTMLElement) => {
         setActive(false);
       }}
-      onSetActive={(_to: string, _element: HTMLElement) => {
+      onSetActive={async (_to: string, _element: HTMLElement) => {
         setActive(true);
       }}
       className="flex"
@@ -36,12 +34,16 @@ export default function NavIcon({ icon, color, name, href, id }: IconProps) {
       duration={500}
       to={`${href}`}
     >
+      <div className="bg-blue-500"></div>
       <div
-        className={`relative flex items-center justify-center
+        style={{
+          backgroundColor:
+            showPopUp || active ? colors[color as keyof typeof colors] : "",
+        }}
+        className={`text-xl relative flex items-center justify-center
                     w-12 h-12 mt-2 mb-2 mx-2
-                    bg-gray-800 text-white ${hoverColor}
-                    ${active ? "rounded-xl " + activeColor : "rounded-3xl"}
-                    rounded-3xl hover:rounded-xl
+                    bg-gray-800 text-white rounded-3xl 
+                    ${active || showPopUp ? "rounded-xl " : "rounded-3xl"}
                     transition-all duration-100 ease-linear cursor-pointer`}
         onMouseEnter={() => setShowPopUp(true)}
         onMouseLeave={() => setShowPopUp(false)}
