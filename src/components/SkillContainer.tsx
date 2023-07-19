@@ -9,8 +9,8 @@ export default function SkillContainer({
 }) {
   if (icon !== null)
     return (
-      <div className="w-60 flex flex-row justify-center text-gray-600 items-center text-xl border-blue-300 border-2 px-2 py-1 rounded-lg mx-4">
-        {icon} <p className="text-xl ml-4 ">{name}</p>
+      <div className="flex flex-row justify-start items-center">
+        {icon} <p className="text-lg ml-2 ">{name}</p>
       </div>
     );
   else

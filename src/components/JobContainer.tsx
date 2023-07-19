@@ -33,9 +33,12 @@ function JobContainer({
               <p>{date[1]}</p>
             </div>
             <div className="mt-8">
-              {descriptions.map((description) => (
+              {descriptions.map((description, index) => (
                 <>
-                  <div className="flex flex-row items-start text-lg mb-2">
+                  <div
+                    key={`${description}-${index}`}
+                    className="flex flex-row items-start text-lg mb-2"
+                  >
                     <div className="mr-4 mt-1">
                       <IconCode className="text-sm" />
                     </div>
@@ -46,9 +49,12 @@ function JobContainer({
             </div>
 
             <div className="flex flex-row items-start justify-start">
-              {skills.map((skill) => (
+              {skills.map((skill, index) => (
                 <>
-                  <div className="flex flex-row items-start text-lg mb-2">
+                  <div
+                    key={`${skill}-${index}`}
+                    className="flex flex-row items-start text-lg mb-2"
+                  >
                     <div className="mr-2 mt-2">
                       <SkillContainer name={skill} icon={null} />
                     </div>

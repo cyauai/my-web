@@ -4,9 +4,9 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiSpringboot,
-  SiHtml5,
   SiGit,
   SiCss3,
+  SiPython,
 } from "react-icons/si";
 
 import { TbBrandReactNative } from "react-icons/tb";
@@ -14,34 +14,21 @@ import { TbBrandReactNative } from "react-icons/tb";
 export default function Skills() {
   return (
     <>
-      <div className="flex flex-row justify-center">
-        <div className="inline-flex rounded-lg px-8 py-2 border-zinc-200 border-2 bg-gray-500">
-          <p className="text-xl font-semibold">Skills</p>
-        </div>
-      </div>
+      <div style={{ width: "100%" }} className="mx-12 grid grid-cols-2 gap-y-4">
+        <SkillContainer name="Flutter" icon={<SiFlutter />} />
 
-      <div className="h-8" />
+        <SkillContainer name="React" icon={<TbBrandReactNative />} />
 
-      <div className="rounded-xl mx-36 px-8 py-4 bg-zinc-300 ">
-        <div className="flex flex-row items-center justify-center">
-          <SkillContainer name="Flutter" icon={<SiFlutter />} />
+        <SkillContainer name="Next.js" icon={<SiNextdotjs />} />
 
-          <SkillContainer name="React" icon={<TbBrandReactNative />} />
+        <SkillContainer name="Spring Boot" icon={<SiSpringboot />} />
+        <SkillContainer name="Node.js" icon={<SiNodedotjs />} />
 
-          <SkillContainer name="Next.js" icon={<SiNextdotjs />} />
+        <SkillContainer name="Python" icon={<SiPython />} />
 
-          <SkillContainer name="Spring Boot" icon={<SiSpringboot />} />
-        </div>
-        <div className="h-8" />
-        <div className="flex flex-row items-center justify-center">
-          <SkillContainer name="Node.js" icon={<SiNodedotjs />} />
+        <SkillContainer name="Git" icon={<SiGit />} />
 
-          <SkillContainer name="Html" icon={<SiHtml5 />} />
-
-          <SkillContainer name="Git" icon={<SiGit />} />
-
-          <SkillContainer name="Css" icon={<SiCss3 />} />
-        </div>
+        <SkillContainer name="Css" icon={<SiCss3 />} />
       </div>
     </>
   );

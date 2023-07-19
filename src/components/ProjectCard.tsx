@@ -54,7 +54,6 @@ function ProjectCard({
           <>
             <div
               onMouseEnter={() => {
-                console.log(childHeight);
                 setHover(true);
               }}
               onMouseLeave={() => {
@@ -66,9 +65,12 @@ function ProjectCard({
               <div className="text-2xl">{name}</div>
               <div className="">{description}</div>
               <div className="flex flex-row items-start justify-start">
-                {skills.map((skill) => (
+                {skills.map((skill, index) => (
                   <>
-                    <div className="flex flex-row items-start text-lg mb-2">
+                    <div
+                      key={`${skill}-${index}`}
+                      className="flex flex-row items-start text-lg mb-2"
+                    >
                       <div className="mr-2 mt-2">
                         <SkillContainer name={skill} icon={null} />
                       </div>

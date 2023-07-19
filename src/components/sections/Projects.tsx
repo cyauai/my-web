@@ -7,7 +7,7 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-lightBg flex flex-col">
       <div
         className="flex flex-row items-center justify-center
-                    text-4xl font-semibold animate-pulse mb-12"
+                    text-4xl font-semibold animate-pulse mb-24"
       >
         What I've done
       </div>
