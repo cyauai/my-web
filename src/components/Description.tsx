@@ -4,10 +4,10 @@ import { EncryptedText } from "./EncryptedText";
 function Description() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="h-32" />
+      <div className="h-content-spacing" />
       <RevealText
         fontSize="text-6xl"
-        text="Ken Au, Frontend Developer"
+        text="Ken Au Frontend Developer"
         animationRate={0.05}
       />
       <div className="h-8" />

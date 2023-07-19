@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const colors = {
-  black: "#000000",
-  white: "#FFFFFF",
-};
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -12,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "content-spacing": "8rem",
+      },
+      colors: {
+        lightBg: "#4b5563",
+        darkBg: "#1f2937",
+      },
       animation: {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
       },

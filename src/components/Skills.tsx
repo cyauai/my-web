@@ -1,4 +1,4 @@
-import SkillIconContainer from "./SkillContainer";
+import SkillContainer from "./SkillContainer";
 import {
   SiFlutter,
   SiNextdotjs,
@@ -22,25 +22,25 @@ export default function Skills() {
 
       <div className="h-8" />
 
-      <div className="rounded-xl mx-40 px-8 py-4 bg-zinc-200">
+      <div className="rounded-xl mx-36 px-8 py-4 bg-zinc-300 ">
         <div className="flex flex-row items-center justify-center">
-          <SkillIconContainer name="Flutter" icon={<SiFlutter />} />
+          <SkillContainer name="Flutter" icon={<SiFlutter />} />
 
-          <SkillIconContainer name="React" icon={<TbBrandReactNative />} />
+          <SkillContainer name="React" icon={<TbBrandReactNative />} />
 
-          <SkillIconContainer name="Next.js" icon={<SiNextdotjs />} />
+          <SkillContainer name="Next.js" icon={<SiNextdotjs />} />
 
-          <SkillIconContainer name="Spring Boot" icon={<SiSpringboot />} />
+          <SkillContainer name="Spring Boot" icon={<SiSpringboot />} />
         </div>
         <div className="h-8" />
         <div className="flex flex-row items-center justify-center">
-          <SkillIconContainer name="Node.js" icon={<SiNodedotjs />} />
+          <SkillContainer name="Node.js" icon={<SiNodedotjs />} />
 
-          <SkillIconContainer name="Html" icon={<SiHtml5 />} />
+          <SkillContainer name="Html" icon={<SiHtml5 />} />
 
-          <SkillIconContainer name="Git" icon={<SiGit />} />
+          <SkillContainer name="Git" icon={<SiGit />} />
 
-          <SkillIconContainer name="Css" icon={<SiCss3 />} />
+          <SkillContainer name="Css" icon={<SiCss3 />} />
         </div>
       </div>
     </>

@@ -16,12 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-gray-600">
+    <html lang="en">
       <head>
         <script src="https://unpkg.com/split-type"></script>
       </head>
       <body className={outfit.className}>
-        <div className="bg-gray-600">
+        <div>
           <NavBar />
           <main className="ml-16">{children}</main>
         </div>
