@@ -14,7 +14,7 @@ export default function Projects() {
           name="Portfolio Website"
           description="Built with Next.js 13 and Tailwind CSS, this platform aims to catalog all my works and serve as a space to hone my skills."
           githubRepo={"https://github.com/cyauai/my-web"}
-          productLink={"http://localhost:3000/"}
+          productLink={"https://portfolio-cyauai.vercel.app/"}
           skills={["Next.js", "Tailwind Css", "Typescript"]}
         />
         <ProjectCard
