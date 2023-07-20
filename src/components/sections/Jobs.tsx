@@ -1,11 +1,14 @@
-import JobContainer from "../JobContainer";
+import JobCard from "../JobCard";
+import Title from "../Title";
 
 export default function Jobs() {
   return (
     <section id="jobs" className="bg-gray-800">
       <div className="h-24" />
+      <Title title="Work Experience" />
+      <div className="h-24" />
       <div className="flex justify-center flex-col items-center">
-        <JobContainer
+        <JobCard
           url="https://synpulse8.com/our-solutions/pulse8-digital-banking-platform?gclid=Cj0KCQjwk96lBhDHARIsAEKO4xbaaZIU6R6hvf5x6ZSIVriDb2we8iQzhGWwy2zVrVicd73YMPispAIaAqGkEALw_wcB"
           name="Synpulse"
           date={["January 2021", "Present"]}
@@ -18,7 +21,7 @@ export default function Jobs() {
           skills={["Flutter", "Spring Boot", "React", "CICD", "TypeScript"]}
         />
         <div className="h-12" />
-        <JobContainer
+        <JobCard
           url="https://www.caterat.com/"
           name="R Cube App Studio Limited"
           date={["June 2020", "December 2020"]}

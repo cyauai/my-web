@@ -1,16 +1,13 @@
 import ProjectCard from "../ProjectCard";
 import cateratScreencap from "../../../public/caterat_screencap.png";
 import websiteScreencap from "../../../public/website_screencap.png";
+import Title from "../Title";
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24 bg-lightBg flex flex-col">
-      <div
-        className="flex flex-row items-center justify-center
-                    text-4xl font-semibold animate-pulse mb-24"
-      >
-        What I've done
-      </div>
+      <Title title="What I've done" />
+      <div className="h-24" />
       <div className="grid grid-cols-2">
         <ProjectCard
           path={websiteScreencap}

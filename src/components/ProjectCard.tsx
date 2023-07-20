@@ -22,15 +22,13 @@ function ProjectCard({
 }) {
   const [isHover, setHover] = useState(false);
   const [childHeight, setChildHeight] = useState(0);
-  const [childWidth, setChildWidth] = useState(0);
   const childRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     if (childRef.current) {
       setChildHeight(childRef.current.offsetHeight);
-      setChildWidth(childRef.current.offsetWidth);
     }
-  }, [childRef]);
+  });
 
   return (
     <>
@@ -66,16 +64,14 @@ function ProjectCard({
               <div className="">{description}</div>
               <div className="flex flex-row items-start justify-start">
                 {skills.map((skill, index) => (
-                  <>
-                    <div
-                      key={`${skill}-${index}`}
-                      className="flex flex-row items-start text-lg mb-2"
-                    >
-                      <div className="mr-2 mt-2">
-                        <SkillContainer name={skill} icon={null} />
-                      </div>
+                  <div
+                    key={`${skill}-${index}`}
+                    className="flex flex-row items-start text-lg mb-2"
+                  >
+                    <div className="mr-2 mt-2">
+                      <SkillContainer name={skill} icon={null} />
                     </div>
-                  </>
+                  </div>
                 ))}
               </div>
 

@@ -2,7 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { IconCode } from "@/components/icons";
 import SkillContainer from "./SkillContainer";
 
-function JobContainer({
+function JobCard({
   name,
   descriptions,
   skills,
@@ -34,32 +34,28 @@ function JobContainer({
             </div>
             <div className="mt-8">
               {descriptions.map((description, index) => (
-                <>
-                  <div
-                    key={`${description}-${index}`}
-                    className="flex flex-row items-start text-lg mb-2"
-                  >
-                    <div className="mr-4 mt-1">
-                      <IconCode className="text-sm" />
-                    </div>
-                    <div>{description}</div>
+                <div
+                  key={`${description}-${index}`}
+                  className="flex flex-row items-start text-lg mb-2"
+                >
+                  <div className="mr-4 mt-1">
+                    <IconCode className="text-sm" />
                   </div>
-                </>
+                  <div>{description}</div>
+                </div>
               ))}
             </div>
 
             <div className="flex flex-row items-start justify-start">
               {skills.map((skill, index) => (
-                <>
-                  <div
-                    key={`${skill}-${index}`}
-                    className="flex flex-row items-start text-lg mb-2"
-                  >
-                    <div className="mr-2 mt-2">
-                      <SkillContainer name={skill} icon={null} />
-                    </div>
+                <div
+                  key={`${skill}-${index}`}
+                  className="flex flex-row items-start text-lg mb-2"
+                >
+                  <div className="mr-2 mt-2">
+                    <SkillContainer name={skill} icon={null} />
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>
@@ -69,4 +65,4 @@ function JobContainer({
   );
 }
 
-export default JobContainer;
+export default JobCard;

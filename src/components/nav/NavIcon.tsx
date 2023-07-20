@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 type IconProps = {
   icon: ReactNode;
   color: string;
-  name: string;
-  href: string;
+  name: string | null;
+  href: string | null;
 };
 
 export default function NavIcon({ icon, color, name, href }: IconProps) {
@@ -14,7 +14,8 @@ export default function NavIcon({ icon, color, name, href }: IconProps) {
     rose: "#f43f5e",
     indigo: "#6366f1",
     blue: "#3b82f6",
-    orange: "#f97316",
+    teal: "#14b8a6",
+    stone: "#78716c",
   };
 
   const [showPopUp, setShowPopUp] = useState(false);
@@ -34,7 +35,6 @@ export default function NavIcon({ icon, color, name, href }: IconProps) {
       duration={500}
       to={`${href}`}
     >
-      <div className="bg-blue-500"></div>
       <div
         style={{
           backgroundColor:
@@ -50,8 +50,8 @@ export default function NavIcon({ icon, color, name, href }: IconProps) {
       >
         {icon}
       </div>
-      {showPopUp && (
-        <div className="flex items-center">
+      {showPopUp && name && (
+        <div className="flex items-center z-10">
           <div className="w-4 h-4 bg-gray-900 transform rotate-45 -translate-x-[-14px]" />
 
           <div
