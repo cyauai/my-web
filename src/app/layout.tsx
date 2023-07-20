@@ -17,9 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script src="https://unpkg.com/split-type"></script>
-      </head>
       <body className={outfit.className}>
         <div>
           <main>
