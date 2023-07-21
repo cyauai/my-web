@@ -6,11 +6,11 @@ import Title from "../Title";
 export default function Contact() {
   return (
     <section id="contact" className="bg-darkBg flex flex-col md:items-center">
-      <div className="h-12" />
+      <div className="h-6 md:h-12" />
       <Title title="Contact Me" />
-      <div className="h-12" />
+      <div className="h-6 md:h-12" />
       <div className="ml-5 md:ml-0">
-        <div className="text-xl">Thanks for your reading !</div>
+        <div className="text-base md:text-xl">Thanks for your reading !</div>
         <div className="text-base md:text-xl md:text-center">
           Welcome to any feedback, comment and job opportunity
         </div>

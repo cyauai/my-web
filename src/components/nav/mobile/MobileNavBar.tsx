@@ -8,7 +8,7 @@ const MobileNavBar = () => {
   const [isOpen, setOpen] = useState(false);
   const [isClick, setClick] = useState(false);
   return (
-    <div className="fixed flex flex-row z-10">
+    <div className="fixed flex flex-row z-10 w-[100%] bg-gray-800 opacity-95 h-16">
       <div
         className={`flex flex-row bg-zinc-800
           ${isOpen ?? "border-2"} border-gray-300 ${
