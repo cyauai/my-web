@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { useState } from "react";
 import Skills from "./Skills";
+import { TiArrowForwardOutline } from "react-icons/ti";
 
 function NameCard() {
   const [isFlip, setFlip] = useState(false);
@@ -13,7 +14,7 @@ function NameCard() {
       onClick={() => {
         setFlip(!isFlip);
       }}
-      className="flip-card bg-transparent z-0"
+      className="relative flip-card bg-transparent z-0"
       style={{ perspective: "1000px", width: "700px", height: "400px" }}
     >
       <div
@@ -56,6 +57,10 @@ function NameCard() {
           ></div>
           <Skills />
         </div>
+      </div>
+      <div className="absolute bottom-0 right-0 flex flex-row animate-pulse mr-4 mb-2">
+        <div className="text-base mt-2 mr-1">Tap to Flip</div>
+        <TiArrowForwardOutline className="text-4xl mb-2" />
       </div>
     </div>
   );

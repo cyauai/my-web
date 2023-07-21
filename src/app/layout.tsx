@@ -21,7 +21,7 @@ export default function RootLayout({
         <div>
           <main>
             <NavBar />
-            <div className="ml-16">{children}</div>
+            <div className="md:ml-16 w-[100%]">{children}</div>
           </main>
         </div>
       </body>

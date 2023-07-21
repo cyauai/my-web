@@ -4,10 +4,10 @@ import Title from "../Title";
 export default function Jobs() {
   return (
     <section id="jobs" className="bg-gray-800">
-      <div className="h-24" />
+      <div className="md:h-24 h-12" />
       <Title title="Work Experience" />
-      <div className="h-24" />
-      <div className="flex justify-center flex-col items-center">
+      <div className="md:h-24 h-12" />
+      <div className="flex justify-center flex-col md:items-center">
         <JobCard
           url="https://synpulse8.com/our-solutions/pulse8-digital-banking-platform?gclid=Cj0KCQjwk96lBhDHARIsAEKO4xbaaZIU6R6hvf5x6ZSIVriDb2we8iQzhGWwy2zVrVicd73YMPispAIaAqGkEALw_wcB"
           name="Synpulse"
@@ -33,7 +33,7 @@ export default function Jobs() {
           ]}
           skills={["Flutter", "Node.js", "React", "POS", "Stripe"]}
         />
-        <div className="h-24" />
+        <div className="h-12 md:h-24" />
       </div>
     </section>
   );

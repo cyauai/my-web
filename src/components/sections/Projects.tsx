@@ -5,17 +5,17 @@ import Title from "../Title";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-lightBg flex flex-col">
+    <section id="projects" className="py-12 md:py-24 bg-lightBg flex flex-col">
       <Title title="What I've done" />
-      <div className="h-24" />
-      <div className="grid grid-cols-2">
+      <div className="h-12 md:h-24" />
+      <div className="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-2">
         <ProjectCard
           path={websiteScreencap}
           name="Portfolio Website"
           description="Built with Next.js 13 and Tailwind CSS, this platform aims to catalog all my works and serve as a space to hone my skills."
           githubRepo={"https://github.com/cyauai/my-web"}
           productLink={"https://portfolio-cyauai.vercel.app/"}
-          skills={["Next.js", "Tailwind Css", "Typescript"]}
+          skills={["Next.js", "Tailwind", "Typescript"]}
         />
         <ProjectCard
           path={cateratScreencap}

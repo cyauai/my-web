@@ -57,16 +57,15 @@ function ProjectCard({
               onMouseLeave={() => {
                 setHover(false);
               }}
-              className="absolute top-0 px-4"
+              className="absolute top-0 px-4 pt-4 md:pt-0"
             >
-              <div style={{ height: `${childHeight - 170}px` }} />
-              <div className="text-2xl">{name}</div>
-              <div className="">{description}</div>
+              <div className="text-lg md:text-2xl">{name}</div>
+              <div className="text-sm md:text-base">{description}</div>
               <div className="flex flex-row items-start justify-start">
                 {skills.map((skill, index) => (
                   <div
                     key={`${skill}-${index}`}
-                    className="flex flex-row items-start text-lg mb-2"
+                    className="flex flex-row items-start text-sm md:text-lg mb-2"
                   >
                     <div className="mr-2 mt-2">
                       <SkillContainer name={skill} icon={null} />

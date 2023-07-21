@@ -5,21 +5,23 @@ import Title from "../Title";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-darkBg flex flex-col items-center">
+    <section id="contact" className="bg-darkBg flex flex-col md:items-center">
       <div className="h-12" />
       <Title title="Contact Me" />
       <div className="h-12" />
-      <div className="text-xl">Thanks for your reading !</div>
-      <div className="text-xl">
-        Welcome to any feedback, comment and job opportunity
-      </div>
-      <div className="flex flex-row mt-3">
-        <ContactButton icon={<BsGithub />} href="https://github.com/cyauai" />
-        <ContactButton icon={<MdEmail />} href="mailto: cyauai@gmail.com" />
-        <ContactButton
-          icon={<BsLinkedin />}
-          href="https://www.linkedin.com/in/cheukyin-au-aba236201/"
-        />
+      <div className="ml-5 md:ml-0">
+        <div className="text-xl">Thanks for your reading !</div>
+        <div className="text-base md:text-xl md:text-center">
+          Welcome to any feedback, comment and job opportunity
+        </div>
+        <div className="flex flex-row mt-3">
+          <ContactButton icon={<BsGithub />} href="https://github.com/cyauai" />
+          <ContactButton icon={<MdEmail />} href="mailto: cyauai@gmail.com" />
+          <ContactButton
+            icon={<BsLinkedin />}
+            href="https://www.linkedin.com/in/cheukyin-au-aba236201/"
+          />
+        </div>
       </div>
       <div className="h-12" />
     </section>
