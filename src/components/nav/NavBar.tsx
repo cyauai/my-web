@@ -5,7 +5,7 @@ import { MdWork } from "react-icons/md";
 
 export default function NavBar() {
   return (
-    <div className="fixed flex flex-col">
+    <div className="fixed flex flex-col z-10">
       <div className="fixed w-16 left-0 top-0 h-screen bg-gray-900" />
 
       <NavIcon icon={<AiFillHome />} color="rose" name="Home" href="hero" />
