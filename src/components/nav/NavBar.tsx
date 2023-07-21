@@ -7,5 +7,5 @@ import MobileNavBar from "./mobile/MobileNavBar";
 export default function NavBar() {
   const isMobile = useIsMobile();
 
-  return <>{isMobile ? <MobileNavBar /> : <DesktopNavBar />}</>;
+  return <>{!isMobile ? <DesktopNavBar /> : <MobileNavBar />}</>;
 }

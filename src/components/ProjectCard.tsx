@@ -59,6 +59,7 @@ function ProjectCard({
               }}
               className="absolute top-0 px-4 pt-4 md:pt-0"
             >
+              <div style={{ height: `${childHeight - 170}px` }} />
               <div className="text-lg md:text-2xl">{name}</div>
               <div className="text-sm md:text-base">{description}</div>
               <div className="flex flex-row items-start justify-start">
@@ -73,7 +74,6 @@ function ProjectCard({
                   </div>
                 ))}
               </div>
-
               <div className="flex flex-row justify-end">
                 {productLink && (
                   <>
