@@ -1,6 +1,7 @@
 import ProjectCard from "../ProjectCard";
 import cateratScreencap from "../../../public/caterat_screencap.png";
 import websiteScreencap from "../../../public/website_screencap.png";
+import jsonToDart from "../../../public/json_to_dart.png";
 import Title from "../Title";
 
 export default function Projects() {
@@ -24,6 +25,14 @@ export default function Projects() {
           githubRepo={""}
           productLink={"https://apps.apple.com/mk/app/caterat-pos/id1589037563"}
           skills={["Flutter"]}
+        />
+        <ProjectCard
+          path={jsonToDart}
+          name="Json To Dart"
+          description="A tool to convert json to dart file with json serializable. Provides some conventional method like copyWith, get props."
+          githubRepo={"https://github.com/cyauai/json-to-dart"}
+          productLink={""}
+          skills={["Next.js", "Tailwind", "Typescript", "Shadcn Component"]}
         />
       </div>
     </section>
