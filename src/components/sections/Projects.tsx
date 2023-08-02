@@ -32,7 +32,7 @@ export default function Projects() {
           description="A tool to convert json to dart file with json serializable. Provides some conventional method like copyWith, get props."
           githubRepo={"https://github.com/cyauai/json-to-dart"}
           productLink={"https://json-to-dart-nu.vercel.app/"}
-          skills={["Next.js", "Tailwind", "Typescript", "Shadcn Component"]}
+          skills={["Next.js", "Tailwind", "Typescript", "Shadcn"]}
         />
       </div>
     </section>
