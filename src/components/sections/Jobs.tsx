@@ -18,7 +18,16 @@ export default function Jobs() {
             "Clients are mainly in Financial Industry",
             "Setting up CICD pipeline for several projects with Github Action",
           ]}
-          skills={["Flutter", "Spring Boot", "React", "CICD", "TypeScript"]}
+          skills={[
+            "Flutter",
+            "iOS",
+            "SwiftUI",
+            "React",
+            "Spring",
+            "CICD",
+            "CSS",
+            "TypeScript",
+          ]}
         />
         <div className="h-12" />
         <JobCard

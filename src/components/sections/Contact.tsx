@@ -2,10 +2,21 @@ import ContactButton from "../ContactButton";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import Title from "../Title";
+import coding from "../../../public/me.png";
+import Image from "next/image";
 
 export default function Contact() {
   return (
     <section id="contact" className="bg-darkBg flex flex-col md:items-center">
+      <div className="justify-center items-center pt-[100px] flex">
+        <Image
+          className="rounded-xl"
+          width={300}
+          height={300}
+          src={coding}
+          alt={""}
+        />
+      </div>
       <div className="h-6 md:h-12" />
       <Title title="Contact Me" />
       <div className="h-6 md:h-12" />

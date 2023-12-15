@@ -8,7 +8,7 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiSpringboot,
-  SiGit,
+  SiSwift,
   SiCss3,
   SiPython,
 } from "react-icons/si";
@@ -46,7 +46,7 @@ const MobileSelfDescription = () => {
 
         <SkillContainer name="Python" icon={<SiPython />} />
 
-        <SkillContainer name="Git" icon={<SiGit />} />
+        <SkillContainer name="iOS Native, SwiftUI" icon={<SiSwift />} />
 
         <SkillContainer name="Css" icon={<SiCss3 />} />
       </div>
