@@ -20,10 +20,10 @@ export default function Jobs() {
           ]}
           skills={[
             "Flutter",
-            "iOS",
+            "ReactNative",
             "SwiftUI",
             "React",
-            "Spring",
+            "AWS",
             "CICD",
             "CSS",
             "TypeScript",

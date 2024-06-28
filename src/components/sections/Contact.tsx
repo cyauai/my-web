@@ -4,11 +4,15 @@ import { MdEmail } from "react-icons/md";
 import Title from "../Title";
 import coding from "../../../public/me.png";
 import Image from "next/image";
+import Terminal from "../terminal/Terminal";
 
 export default function Contact() {
   return (
     <section id="contact" className="bg-darkBg flex flex-col md:items-center">
-      <div className="justify-center items-center pt-[100px] flex">
+      <div className="w-[80%] h-[700px] mt-[100px] hidden md:block">
+        <Terminal></Terminal>
+      </div>
+      <div className="justify-center items-center pt-[32px] flex">
         <Image
           className="rounded-xl"
           width={300}
