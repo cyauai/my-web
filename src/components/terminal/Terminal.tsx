@@ -1,8 +1,19 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ReactTerminal, TerminalContextProvider } from "react-terminal";
 
 function Terminal() {
+  const [fileContent, setFileContent] = useState("");
+
+  useEffect(() => {
+    const filePath = "/welcome_ascii.txt"; // 替換為你的文件路徑
+    fetch(filePath)
+      .then((response) => response.text())
+      .then((text) => setFileContent(text))
+      .catch((error) => console.error("Error fetching the file:", error));
+  }, []);
+
   const commands = {
     help: (
       <table>
@@ -58,6 +69,20 @@ function Terminal() {
                 whiteSpace: "nowrap",
               }}
             >
+              <strong>banner</strong>
+            </td>
+            <td style={{ paddingLeft: "64px", color: "#E6B9A6" }}>
+              Show the banner
+            </td>
+          </tr>
+          <tr>
+            <td
+              style={{
+                color: "#6A9C9E",
+                paddingRight: "24px",
+                whiteSpace: "nowrap",
+              }}
+            >
               <strong>help</strong>
             </td>
             <td style={{ paddingLeft: "64px", color: "#E6B9A6" }}>
@@ -78,6 +103,20 @@ function Terminal() {
               Clear terminal
             </td>
           </tr>
+          <tr>
+            <td
+              style={{
+                color: "#6A9C9E",
+                paddingRight: "24px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              <strong style={{ color: "red" }}>danger</strong>
+            </td>
+            <td style={{ paddingLeft: "64px", color: "#E6B9A6" }}>
+              Don&apos;t do this
+            </td>
+          </tr>
         </tbody>
       </table>
     ),
@@ -86,6 +125,9 @@ function Terminal() {
     },
     projects: () => {
       window.open("https://github.com/cyauai", "_blank");
+    },
+    danger: () => {
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
     },
     whoami: (
       <div>
@@ -123,10 +165,18 @@ function Terminal() {
         </span>
       </div>
     ),
+    banner: (
+      <div>
+        <br />
+        <pre>{fileContent}</pre>
+      </div>
+    ),
   };
 
   const welcomeMessage = (
     <div>
+      <br />
+      <pre>{fileContent}</pre>
       <br />
       <p>Welcome to the Ken Au Terminal</p>
       <p>Type &apos;help&apos; to see available commands.</p>
