@@ -3,7 +3,7 @@ import {
   SiFlutter,
   SiNextdotjs,
   SiNodedotjs,
-  SiSpringboot,
+  SiAmazonaws,
   SiCss3,
   SiPython,
   SiSwift,
@@ -21,7 +21,8 @@ export default function Skills() {
 
         <SkillContainer name="Next.js" icon={<SiNextdotjs />} />
 
-        <SkillContainer name="Spring Boot" icon={<SiSpringboot />} />
+        <SkillContainer name="AWS" icon={<SiAmazonaws />} />
+
         <SkillContainer name="Node.js" icon={<SiNodedotjs />} />
 
         <SkillContainer name="Python" icon={<SiPython />} />
