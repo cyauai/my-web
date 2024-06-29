@@ -129,7 +129,7 @@ function Terminal() {
     <div>
       <br />
       <p>Welcome to the Ken Au Terminal</p>
-      <p>Type 'help' to see available commands.</p>
+      <p>Type &apos;help&apos; to see available commands.</p>
       <br />
     </div>
   );
