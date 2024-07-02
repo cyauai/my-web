@@ -1,4 +1,4 @@
-[Cyauai Portfolio web](https://portfolio-cyauai.vercel.app/)
+[Cyauai Portfolio web](https://portfolio-k9osnnge1-cyauais-projects.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
